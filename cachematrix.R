@@ -1,4 +1,3 @@
-## Put comments here that give an overall description of what your
 ##  This function creates a special matrix which is really a list containing a
 ##  function to set the value of the matrix
 ##  function to get the value of the matrix
@@ -27,10 +26,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## The following function calculates the inverse of the special matrix created
 ## makeCacheMatrix.  It first checks if the inverse has already been calculated
-##
-
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  ## Return a matrix that is the inverse of 'x'
   i<-x$getinverse()
   
   if(!is.null(i)) {
